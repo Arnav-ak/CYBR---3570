@@ -15,3 +15,17 @@ def test_brute_force_has_26_candidates():
     candidates = brute_force_caesar("DWWDFN")
     assert len(candidates) == 26
     assert any(candidate == "ATTACK" for _, candidate in candidates)
+
+def test_caesar_round_trip():
+    msg = "Attack at dawn!"
+    shift = 5
+    assert caesar_decrypt(caesar_encrypt(msg, shift), shift) == msg
+
+
+def test_caesar_known_value():
+    assert caesar_encrypt("ABC XYZ", 3) == "DEF ABC"
+
+# Run these inside the notebook for a quick check.
+test_caesar_round_trip()
+test_caesar_known_value()
+print("Notebook tests passed.")
