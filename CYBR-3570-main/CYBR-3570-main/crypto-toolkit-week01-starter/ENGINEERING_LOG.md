@@ -28,3 +28,11 @@ Classical ciphers are useful for learning, but they should never be used to prot
 3. What is one way randomness can fail in a cryptographic system? One way it can fail is if just "random" from py library is used rather than a cryptographic secrects library. If though it is random with factors such as seeding and modulo bias it can fail in a cryptographic system. 
 4. What is one rule you will follow when generating random values in future projects? If the future I will always use the secrects library to generate unbiased random digits. 
 
+
+## Week 3
+
+### Added
+- CryptoLab03
+
+## Reflection
+- proper 128 bit key security takes a really really really long time to break throuhg brute force 
